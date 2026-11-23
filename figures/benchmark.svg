@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="335" viewBox="0 0 960 335" role="img" aria-labelledby="title">
+<title id="title">Correct end-to-end outcomes by receipt scenario and correct extracted fields</title>
+<rect width="960" height="335" fill="#fff"/>
+<g font-family="system-ui,sans-serif" fill="#172d44">
+<text x="28" y="30" font-size="18" font-weight="700">A</text>
+<text x="60" y="30" font-size="18" font-weight="600">Correct outcomes</text>
+<path d="M138 52v213" stroke="#dce4ea"/>
+<text x="138" y="284" text-anchor="middle" font-size="13">0</text>
+<path d="M198 52v213" stroke="#dce4ea"/>
+<text x="198" y="284" text-anchor="middle" font-size="13">1</text>
+<path d="M258 52v213" stroke="#dce4ea"/>
+<text x="258" y="284" text-anchor="middle" font-size="13">2</text>
+<path d="M318 52v213" stroke="#dce4ea"/>
+<text x="318" y="284" text-anchor="middle" font-size="13">3</text>
+<path d="M378 52v213" stroke="#dce4ea"/>
+<text x="378" y="284" text-anchor="middle" font-size="13">4</text>
+<text x="28" y="82" font-size="14">Clean</text>
+<rect x="138" y="70" width="240.0" height="9" fill="#25598a"/>
+<text x="382.0" y="79" font-size="11">4</text>
+<rect x="138" y="82" width="120.0" height="9" fill="#39877b"/>
+<text x="262.0" y="91" font-size="11">2</text>
+<text x="28" y="123" font-size="14">Blurred</text>
+<rect x="138" y="111" width="240.0" height="9" fill="#25598a"/>
+<text x="382.0" y="120" font-size="11">4</text>
+<text x="142.0" y="132" font-size="11">0</text>
+<text x="28" y="164" font-size="14">Same total</text>
+<rect x="138" y="152" width="240.0" height="9" fill="#25598a"/>
+<text x="382.0" y="161" font-size="11">4</text>
+<rect x="138" y="164" width="60.0" height="9" fill="#39877b"/>
+<text x="202.0" y="173" font-size="11">1</text>
+<text x="28" y="205" font-size="14">Ambiguous</text>
+<rect x="138" y="193" width="240.0" height="9" fill="#25598a"/>
+<text x="382.0" y="202" font-size="11">4</text>
+<rect x="138" y="205" width="60.0" height="9" fill="#39877b"/>
+<text x="202.0" y="214" font-size="11">1</text>
+<text x="28" y="246" font-size="14">No match</text>
+<rect x="138" y="234" width="240.0" height="9" fill="#25598a"/>
+<text x="382.0" y="243" font-size="11">4</text>
+<rect x="138" y="246" width="180.0" height="9" fill="#39877b"/>
+<text x="322.0" y="255" font-size="11">3</text>
+<text x="506" y="30" font-size="18" font-weight="700">B</text>
+<text x="538" y="30" font-size="18" font-weight="600">Correct fields</text>
+<path d="M616 52v213" stroke="#dce4ea"/>
+<text x="616" y="284" text-anchor="middle" font-size="13">0</text>
+<path d="M676 52v213" stroke="#dce4ea"/>
+<text x="676" y="284" text-anchor="middle" font-size="13">5</text>
+<path d="M736 52v213" stroke="#dce4ea"/>
+<text x="736" y="284" text-anchor="middle" font-size="13">10</text>
+<path d="M796 52v213" stroke="#dce4ea"/>
+<text x="796" y="284" text-anchor="middle" font-size="13">15</text>
+<path d="M856 52v213" stroke="#dce4ea"/>
+<text x="856" y="284" text-anchor="middle" font-size="13">20</text>
+<text x="506" y="82" font-size="14">Merchant</text>
+<rect x="616" y="70" width="228.0" height="9" fill="#25598a"/>
+<text x="848.0" y="79" font-size="11">19</text>
+<rect x="616" y="82" width="120.0" height="9" fill="#39877b"/>
+<text x="740.0" y="91" font-size="11">10</text>
+<text x="506" y="123" font-size="14">Date</text>
+<rect x="616" y="111" width="240.0" height="9" fill="#25598a"/>
+<text x="860.0" y="120" font-size="11">20</text>
+<rect x="616" y="123" width="180.0" height="9" fill="#39877b"/>
+<text x="800.0" y="132" font-size="11">15</text>
+<text x="506" y="164" font-size="14">Total</text>
+<rect x="616" y="152" width="240.0" height="9" fill="#25598a"/>
+<text x="860.0" y="161" font-size="11">20</text>
+<rect x="616" y="164" width="156.0" height="9" fill="#39877b"/>
+<text x="776.0" y="173" font-size="11">13</text>
+<rect x="327" y="308" width="15" height="9" fill="#25598a"/>
+<text x="349" y="317" font-size="14">RapidOCR + rules</text>
+<rect x="515" y="308" width="15" height="9" fill="#39877b"/>
+<text x="537" y="317" font-size="14">Moondream + rules</text>
+</g></svg>

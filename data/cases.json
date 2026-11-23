@@ -1,0 +1,182 @@
+[
+  {
+    "merchant": "LUMEN MARKET",
+    "date": "2026-03-01",
+    "cents": 725,
+    "id": "r01",
+    "group": "clean",
+    "expected": "T01A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "ATLAS COFFEE",
+    "date": "2026-03-04",
+    "cents": 862,
+    "id": "r02",
+    "group": "clean",
+    "expected": "T02A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-03-07",
+    "cents": 999,
+    "id": "r03",
+    "group": "clean",
+    "expected": "T03A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-03-10",
+    "cents": 1136,
+    "id": "r04",
+    "group": "clean",
+    "expected": "T04A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-03-13",
+    "cents": 1273,
+    "id": "r05",
+    "group": "blurred",
+    "expected": "T05A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-03-16",
+    "cents": 1410,
+    "id": "r06",
+    "group": "blurred",
+    "expected": "T06A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "OLIVE CORNER",
+    "date": "2026-03-19",
+    "cents": 1547,
+    "id": "r07",
+    "group": "blurred",
+    "expected": "T07A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "RIVER CAFE",
+    "date": "2026-03-22",
+    "cents": 1684,
+    "id": "r08",
+    "group": "blurred",
+    "expected": "T08A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "LUMEN MARKET",
+    "date": "2026-03-25",
+    "cents": 1821,
+    "id": "r09",
+    "group": "same_amount",
+    "expected": "T09A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "ATLAS COFFEE",
+    "date": "2026-03-28",
+    "cents": 1958,
+    "id": "r10",
+    "group": "same_amount",
+    "expected": "T10A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-03-31",
+    "cents": 2095,
+    "id": "r11",
+    "group": "same_amount",
+    "expected": "T11A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-04-03",
+    "cents": 2232,
+    "id": "r12",
+    "group": "same_amount",
+    "expected": "T12A",
+    "expected_status": "matched"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-04-06",
+    "cents": 2369,
+    "id": "r13",
+    "group": "indistinguishable",
+    "expected": null,
+    "expected_status": "ambiguous"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-04-09",
+    "cents": 2506,
+    "id": "r14",
+    "group": "indistinguishable",
+    "expected": null,
+    "expected_status": "ambiguous"
+  },
+  {
+    "merchant": "OLIVE CORNER",
+    "date": "2026-04-12",
+    "cents": 2643,
+    "id": "r15",
+    "group": "indistinguishable",
+    "expected": null,
+    "expected_status": "ambiguous"
+  },
+  {
+    "merchant": "RIVER CAFE",
+    "date": "2026-04-15",
+    "cents": 2780,
+    "id": "r16",
+    "group": "indistinguishable",
+    "expected": null,
+    "expected_status": "ambiguous"
+  },
+  {
+    "merchant": "LUMEN MARKET",
+    "date": "2026-04-18",
+    "cents": 2917,
+    "id": "r17",
+    "group": "no_match",
+    "expected": null,
+    "expected_status": "no_match"
+  },
+  {
+    "merchant": "ATLAS COFFEE",
+    "date": "2026-04-21",
+    "cents": 3054,
+    "id": "r18",
+    "group": "no_match",
+    "expected": null,
+    "expected_status": "no_match"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-04-24",
+    "cents": 3191,
+    "id": "r19",
+    "group": "no_match",
+    "expected": null,
+    "expected_status": "no_match"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-04-27",
+    "cents": 3328,
+    "id": "r20",
+    "group": "no_match",
+    "expected": null,
+    "expected_status": "no_match"
+  }
+]

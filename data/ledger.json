@@ -1,0 +1,218 @@
+[
+  {
+    "merchant": "LUMEN MARKET",
+    "date": "2026-03-01",
+    "cents": 725,
+    "id": "T01A"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-03-01",
+    "cents": 956,
+    "id": "T01B"
+  },
+  {
+    "merchant": "ATLAS COFFEE",
+    "date": "2026-03-04",
+    "cents": 862,
+    "id": "T02A"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-03-04",
+    "cents": 1093,
+    "id": "T02B"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-03-07",
+    "cents": 999,
+    "id": "T03A"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-03-07",
+    "cents": 1230,
+    "id": "T03B"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-03-10",
+    "cents": 1136,
+    "id": "T04A"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-03-10",
+    "cents": 1367,
+    "id": "T04B"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-03-13",
+    "cents": 1273,
+    "id": "T05A"
+  },
+  {
+    "merchant": "OLIVE CORNER",
+    "date": "2026-03-13",
+    "cents": 1504,
+    "id": "T05B"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-03-16",
+    "cents": 1410,
+    "id": "T06A"
+  },
+  {
+    "merchant": "RIVER CAFE",
+    "date": "2026-03-16",
+    "cents": 1641,
+    "id": "T06B"
+  },
+  {
+    "merchant": "OLIVE CORNER",
+    "date": "2026-03-19",
+    "cents": 1547,
+    "id": "T07A"
+  },
+  {
+    "merchant": "LUMEN MARKET",
+    "date": "2026-03-19",
+    "cents": 1778,
+    "id": "T07B"
+  },
+  {
+    "merchant": "RIVER CAFE",
+    "date": "2026-03-22",
+    "cents": 1684,
+    "id": "T08A"
+  },
+  {
+    "merchant": "ATLAS COFFEE",
+    "date": "2026-03-22",
+    "cents": 1915,
+    "id": "T08B"
+  },
+  {
+    "merchant": "LUMEN MARKET",
+    "date": "2026-03-25",
+    "cents": 1821,
+    "id": "T09A"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-03-25",
+    "cents": 1821,
+    "id": "T09B"
+  },
+  {
+    "merchant": "ATLAS COFFEE",
+    "date": "2026-03-28",
+    "cents": 1958,
+    "id": "T10A"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-03-28",
+    "cents": 1958,
+    "id": "T10B"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-03-31",
+    "cents": 2095,
+    "id": "T11A"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-03-31",
+    "cents": 2095,
+    "id": "T11B"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-04-03",
+    "cents": 2232,
+    "id": "T12A"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-04-03",
+    "cents": 2232,
+    "id": "T12B"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-04-06",
+    "cents": 2369,
+    "id": "T13A"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-04-06",
+    "cents": 2369,
+    "id": "T13B"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-04-09",
+    "cents": 2506,
+    "id": "T14A"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-04-09",
+    "cents": 2506,
+    "id": "T14B"
+  },
+  {
+    "merchant": "OLIVE CORNER",
+    "date": "2026-04-12",
+    "cents": 2643,
+    "id": "T15A"
+  },
+  {
+    "merchant": "OLIVE CORNER",
+    "date": "2026-04-12",
+    "cents": 2643,
+    "id": "T15B"
+  },
+  {
+    "merchant": "RIVER CAFE",
+    "date": "2026-04-15",
+    "cents": 2780,
+    "id": "T16A"
+  },
+  {
+    "merchant": "RIVER CAFE",
+    "date": "2026-04-15",
+    "cents": 2780,
+    "id": "T16B"
+  },
+  {
+    "merchant": "NORTH BOOKS",
+    "date": "2026-04-18",
+    "cents": 2917,
+    "id": "T17B"
+  },
+  {
+    "merchant": "TEJO BAKERY",
+    "date": "2026-04-21",
+    "cents": 3054,
+    "id": "T18B"
+  },
+  {
+    "merchant": "VISTA GROCERY",
+    "date": "2026-04-24",
+    "cents": 3191,
+    "id": "T19B"
+  },
+  {
+    "merchant": "PORTO STUDIO",
+    "date": "2026-04-27",
+    "cents": 3328,
+    "id": "T20B"
+  }
+]

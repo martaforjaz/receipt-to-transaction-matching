@@ -1,0 +1,614 @@
+{
+  "method": "vision",
+  "summary": {
+    "cases": 20,
+    "fields_correct": {
+      "merchant": 10,
+      "date": 15,
+      "cents": 13
+    },
+    "correct_matches": 3,
+    "wrong_matches": 0,
+    "correct_abstentions": 8,
+    "correct_outcomes": 7,
+    "errors": 0,
+    "median_ms": 5058.6
+  },
+  "by_group": {
+    "clean": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 2,
+        "date": 3,
+        "cents": 3
+      },
+      "correct_matches": 2,
+      "wrong_matches": 0,
+      "correct_abstentions": 0,
+      "correct_outcomes": 2,
+      "errors": 0,
+      "median_ms": 5095.1
+    },
+    "blurred": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 1,
+        "date": 2,
+        "cents": 2
+      },
+      "correct_matches": 0,
+      "wrong_matches": 0,
+      "correct_abstentions": 0,
+      "correct_outcomes": 0,
+      "errors": 0,
+      "median_ms": 4352.9
+    },
+    "same_amount": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 2,
+        "date": 3,
+        "cents": 3
+      },
+      "correct_matches": 1,
+      "wrong_matches": 0,
+      "correct_abstentions": 0,
+      "correct_outcomes": 1,
+      "errors": 0,
+      "median_ms": 11784.7
+    },
+    "indistinguishable": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 2,
+        "date": 3,
+        "cents": 2
+      },
+      "correct_matches": 0,
+      "wrong_matches": 0,
+      "correct_abstentions": 4,
+      "correct_outcomes": 1,
+      "errors": 0,
+      "median_ms": 5170.1
+    },
+    "no_match": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 3,
+        "date": 4,
+        "cents": 3
+      },
+      "correct_matches": 0,
+      "wrong_matches": 0,
+      "correct_abstentions": 4,
+      "correct_outcomes": 3,
+      "errors": 0,
+      "median_ms": 4452.2
+    }
+  },
+  "cases": [
+    {
+      "id": "r01",
+      "group": "clean",
+      "expected": "T01A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": null,
+        "date": "2026-03-01",
+        "cents": null
+      },
+      "raw": "\n Date: 2026-03-01",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 7042.5,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": false
+      }
+    },
+    {
+      "id": "r02",
+      "group": "clean",
+      "expected": "T02A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "Atas Coffee",
+        "date": "2026-03-04",
+        "cents": 862
+      },
+      "raw": "\n Atas Coffee Date: 2026-03-04 Total: 8.62 Euro Purchase: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total: 8.62 Euro Total",
+      "result": {
+        "status": "matched",
+        "transaction": "T02A",
+        "candidates": [
+          {
+            "id": "T02A",
+            "merchant_similarity": 0.952
+          }
+        ]
+      },
+      "error": null,
+      "ms": 9535.0,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r03",
+      "group": "clean",
+      "expected": "T03A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "North Books",
+        "date": "2026-06-03",
+        "cents": 999
+      },
+      "raw": "\nNorth Books Date: 2026-06-03 Date: Total EUR 9.99",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 3147.6,
+      "fields_correct": {
+        "merchant": true,
+        "date": false,
+        "cents": true
+      }
+    },
+    {
+      "id": "r04",
+      "group": "clean",
+      "expected": "T04A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "Tejo Bakery",
+        "date": "2026-03-10",
+        "cents": 1136
+      },
+      "raw": "\n Tejo Bakery Date: 2026-03-10 Total: 11.36",
+      "result": {
+        "status": "matched",
+        "transaction": "T04A",
+        "candidates": [
+          {
+            "id": "T04A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 2685.6,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r05",
+      "group": "blurred",
+      "expected": "T05A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": null,
+        "date": "2026-03-13",
+        "cents": 1273
+      },
+      "raw": "\n Date: 2026-03-13 \n Total: 12.73",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 2834.9,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r06",
+      "group": "blurred",
+      "expected": "T06A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": null,
+        "date": "2026-03-16",
+        "cents": null
+      },
+      "raw": "\n Date: 2026-03-16",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 8094.7,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": false
+      }
+    },
+    {
+      "id": "r07",
+      "group": "blurred",
+      "expected": "T07A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "Olive Corner",
+        "date": "2020-02-03",
+        "cents": 1547
+      },
+      "raw": "\n Olive Corner: Date: 2020-02-03; Items: 2; Purchases: 1; Total: 15.47",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 4074.1,
+      "fields_correct": {
+        "merchant": true,
+        "date": false,
+        "cents": true
+      }
+    },
+    {
+      "id": "r08",
+      "group": "blurred",
+      "expected": "T08A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": null,
+        "date": "2008-03-22",
+        "cents": null
+      },
+      "raw": "\n Date: 2008-03-22",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 4631.6,
+      "fields_correct": {
+        "merchant": false,
+        "date": false,
+        "cents": false
+      }
+    },
+    {
+      "id": "r09",
+      "group": "same_amount",
+      "expected": "T09A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": null,
+        "date": "2026-03-25",
+        "cents": 1821
+      },
+      "raw": "\n Date: 2026-03-25\n Total: 18.21",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 18420.2,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r10",
+      "group": "same_amount",
+      "expected": "T10A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "Atas Coffee",
+        "date": "2026-03-28",
+        "cents": 1958
+      },
+      "raw": "\n Atas Coffee - Date: 2026-03-28 - Total: 19.58 - Total: 19.58",
+      "result": {
+        "status": "matched",
+        "transaction": "T10A",
+        "candidates": [
+          {
+            "id": "T10A",
+            "merchant_similarity": 0.952
+          },
+          {
+            "id": "T10B",
+            "merchant_similarity": 0.2
+          }
+        ]
+      },
+      "error": null,
+      "ms": 3523.9,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r11",
+      "group": "same_amount",
+      "expected": "T11A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "North Books",
+        "date": "2026-03-31",
+        "cents": null
+      },
+      "raw": "\nNorth Books Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31 Date: 2026-03-31",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 29860.9,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": false
+      }
+    },
+    {
+      "id": "r12",
+      "group": "same_amount",
+      "expected": "T12A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "Tejo Bakery",
+        "date": "2026-04-04",
+        "cents": 2232
+      },
+      "raw": "\n Tejo Bakery Date: 2026-04-04\n Total EUR: 22.32",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 5149.1,
+      "fields_correct": {
+        "merchant": true,
+        "date": false,
+        "cents": true
+      }
+    },
+    {
+      "id": "r13",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": null,
+        "date": "2026-04-06",
+        "cents": 2369
+      },
+      "raw": "\n Date: 2026-04-06\n Total: 23.69",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 5007.6,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r14",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": null,
+        "date": "2026-04-09",
+        "cents": null
+      },
+      "raw": "\n Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date: 2026-04-09 Date:",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 9786.0,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": false
+      }
+    },
+    {
+      "id": "r15",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": "Olive Corner",
+        "date": null,
+        "cents": null
+      },
+      "raw": "\n Olive Corner",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 2204.6,
+      "fields_correct": {
+        "merchant": true,
+        "date": false,
+        "cents": false
+      }
+    },
+    {
+      "id": "r16",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": "River Cafe",
+        "date": "2026-04-15",
+        "cents": 2780
+      },
+      "raw": "\n River Cafe Date: 2026-04-15 Total: 27.8",
+      "result": {
+        "status": "ambiguous",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T16B",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T16A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 5332.6,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r17",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "LUMEN MARKET",
+        "date": "2026-04-18",
+        "cents": 2917
+      },
+      "raw": "!!!LUMEN MARKET!!! Date: 2026-04-18! Total: 29.17! Items: 29.17!! Purchases: 29.17!!",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T17B",
+            "merchant_similarity": 0.286
+          }
+        ]
+      },
+      "error": null,
+      "ms": 6216.3,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r18",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "Atas Coffee",
+        "date": "2026-04-21",
+        "cents": 3054
+      },
+      "raw": "\n Atas Coffee Date: 2026-04-21 Total: 30.54",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T18B",
+            "merchant_similarity": 0.2
+          }
+        ]
+      },
+      "error": null,
+      "ms": 5109.7,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r19",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "North Books",
+        "date": "2026-04-24",
+        "cents": 3191
+      },
+      "raw": "\nNorth Books Date: 2026-04-24 Total: 31.91",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T19B",
+            "merchant_similarity": 0.182
+          }
+        ]
+      },
+      "error": null,
+      "ms": 2300.6,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r20",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "Tejo Bakery",
+        "date": "2026-04-27",
+        "cents": null
+      },
+      "raw": "\n Tejo Bakery Date: 2026-04-27",
+      "result": {
+        "status": "needs_review",
+        "transaction": null,
+        "candidates": []
+      },
+      "error": null,
+      "ms": 3794.7,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": false
+      }
+    }
+  ]
+}

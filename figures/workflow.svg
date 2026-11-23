@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" role="img" aria-labelledby="title">
+<title id="title">Receipt-to-Transaction Matching. The same receipts pass through OCR and a vision model before both methods use the same ledger matching policy.</title>
+<rect width="1000" height="250" rx="19" fill="#142d47"/>
+<g font-family="system-ui,sans-serif" fill="#f6f9fb">
+<text x="39" y="59" font-weight="700" font-size="32">Receipt-to-Transaction Matching</text>
+<g stroke="#8dc8bf" fill="none" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+<path fill="#dbe9e7" d="M49 96h74v92l-12-7-12 7-12-7-12 7-12-7-14 7z"/>
+<path stroke="#142d47" d="M61 116h49m-49 13h49m-49 13h35m-35 22h49"/>
+<path d="M147 145h48l51-30h34m-85 30 51 29h34m185-59h50l51 30h31m-132 29h50l51-29m255 0h44m-8-7 8 7-8 7"/>
+<rect x="287" y="95" width="172" height="39" rx="8"/>
+<rect x="287" y="154" width="172" height="39" rx="8"/>
+<rect x="605" y="124" width="206" height="43" rx="8"/>
+<circle fill="#8dc8bf" cx="916" cy="145" r="25"/>
+<path stroke="#142d47" stroke-width="3" d="m905 145 8 8 14-15"/>
+</g>
+<g font-size="17" text-anchor="middle"><text x="373" y="121">OCR</text><text x="373" y="180">Vision model</text><text x="708" y="151">Shared ledger policy</text><text x="916" y="204">Match or abstain</text></g>
+<g fill="#d2e2ef" font-size="14" text-anchor="middle"><text x="87" y="214">Receipt</text><text x="708" y="190">Merchant · date · total</text></g>
+</g>
+</svg>

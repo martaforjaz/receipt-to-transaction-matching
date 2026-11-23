@@ -1,0 +1,703 @@
+{
+  "method": "ocr",
+  "summary": {
+    "cases": 20,
+    "fields_correct": {
+      "merchant": 19,
+      "date": 20,
+      "cents": 20
+    },
+    "correct_matches": 12,
+    "wrong_matches": 0,
+    "correct_abstentions": 8,
+    "correct_outcomes": 20,
+    "errors": 0,
+    "median_ms": 646.8
+  },
+  "by_group": {
+    "clean": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 4,
+        "date": 4,
+        "cents": 4
+      },
+      "correct_matches": 4,
+      "wrong_matches": 0,
+      "correct_abstentions": 0,
+      "correct_outcomes": 4,
+      "errors": 0,
+      "median_ms": 658.3
+    },
+    "blurred": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 4,
+        "date": 4,
+        "cents": 4
+      },
+      "correct_matches": 4,
+      "wrong_matches": 0,
+      "correct_abstentions": 0,
+      "correct_outcomes": 4,
+      "errors": 0,
+      "median_ms": 492.4
+    },
+    "same_amount": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 4,
+        "date": 4,
+        "cents": 4
+      },
+      "correct_matches": 4,
+      "wrong_matches": 0,
+      "correct_abstentions": 0,
+      "correct_outcomes": 4,
+      "errors": 0,
+      "median_ms": 655.4
+    },
+    "indistinguishable": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 3,
+        "date": 4,
+        "cents": 4
+      },
+      "correct_matches": 0,
+      "wrong_matches": 0,
+      "correct_abstentions": 4,
+      "correct_outcomes": 4,
+      "errors": 0,
+      "median_ms": 790.3
+    },
+    "no_match": {
+      "cases": 4,
+      "fields_correct": {
+        "merchant": 4,
+        "date": 4,
+        "cents": 4
+      },
+      "correct_matches": 0,
+      "wrong_matches": 0,
+      "correct_abstentions": 4,
+      "correct_outcomes": 4,
+      "errors": 0,
+      "median_ms": 635.9
+    }
+  },
+  "cases": [
+    {
+      "id": "r01",
+      "group": "clean",
+      "expected": "T01A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "LUMENMARKET",
+        "date": "2026-03-01",
+        "cents": 725
+      },
+      "raw": "LUMENMARKET\nDATE2026-03-01\nITEMS EUR\nPurchase 7.25\nTOTALEUR7.25\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T01A",
+        "candidates": [
+          {
+            "id": "T01A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 1336.2,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r02",
+      "group": "clean",
+      "expected": "T02A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "ATLASCOFFEE",
+        "date": "2026-03-04",
+        "cents": 862
+      },
+      "raw": "ATLASCOFFEE\nDATE 2026-03-04\nITEMS EUR\nPurchase 8.62\nTOTALEUR8.62\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T02A",
+        "candidates": [
+          {
+            "id": "T02A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 661.3,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r03",
+      "group": "clean",
+      "expected": "T03A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "NORTH BOOKS",
+        "date": "2026-03-07",
+        "cents": 999
+      },
+      "raw": "NORTH BOOKS\nDATE 2026-03-07\nITEMS EUR\nPurchase 9.99\nTOTALEUR9.99\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T03A",
+        "candidates": [
+          {
+            "id": "T03A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 516.1,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r04",
+      "group": "clean",
+      "expected": "T04A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "TEJOBAKERY",
+        "date": "2026-03-10",
+        "cents": 1136
+      },
+      "raw": "TEJOBAKERY\nDATE2026-03-10\nITEMS EUR\nPurchase 11.36\nTOTALEUR11.36\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T04A",
+        "candidates": [
+          {
+            "id": "T04A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 655.4,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r05",
+      "group": "blurred",
+      "expected": "T05A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "VISTAGROCERY",
+        "date": "2026-03-13",
+        "cents": 1273
+      },
+      "raw": "VISTAGROCERY\nDATE2026-03-13\nITEMS EUR\nPurchase 12.73\nTOTAL EUR 12.73\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T05A",
+        "candidates": [
+          {
+            "id": "T05A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 671.8,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r06",
+      "group": "blurred",
+      "expected": "T06A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "PORTOSTUDIO",
+        "date": "2026-03-16",
+        "cents": 1410
+      },
+      "raw": "PORTOSTUDIO\nDATE2026-03-16\nITEMS EUR\nPurchase 14.10\nTOTALEUR14.10\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T06A",
+        "candidates": [
+          {
+            "id": "T06A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 375.2,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r07",
+      "group": "blurred",
+      "expected": "T07A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "OLIVECORNER",
+        "date": "2026-03-19",
+        "cents": 1547
+      },
+      "raw": "OLIVECORNER\nDATE 2026-03-19\nES EUR\nPurchase 15.47\nTOTALEUR15.47\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T07A",
+        "candidates": [
+          {
+            "id": "T07A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 413.4,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r08",
+      "group": "blurred",
+      "expected": "T08A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "RIVERCAFE",
+        "date": "2026-03-22",
+        "cents": 1684
+      },
+      "raw": "RIVERCAFE\nDATE 2026-03-22\nITEMS EUR\n16.84\nTOTALEUR16.84",
+      "result": {
+        "status": "matched",
+        "transaction": "T08A",
+        "candidates": [
+          {
+            "id": "T08A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 571.5,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r09",
+      "group": "same_amount",
+      "expected": "T09A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "LUMENMARKET",
+        "date": "2026-03-25",
+        "cents": 1821
+      },
+      "raw": "LUMENMARKET\nDATE2026-03-25\nITEMS EUR\nPurchase 18.21\nTOTALEUR18.21\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T09A",
+        "candidates": [
+          {
+            "id": "T09A",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T09B",
+            "merchant_similarity": 0.286
+          }
+        ]
+      },
+      "error": null,
+      "ms": 832.2,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r10",
+      "group": "same_amount",
+      "expected": "T10A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "ATLASCOFFEE",
+        "date": "2026-03-28",
+        "cents": 1958
+      },
+      "raw": "ATLASCOFFEE\nDATE 2026-03-28\nITEMS EUR\nPurchase 19.58\nTOTALEUR19.58\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T10A",
+        "candidates": [
+          {
+            "id": "T10A",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T10B",
+            "merchant_similarity": 0.19
+          }
+        ]
+      },
+      "error": null,
+      "ms": 709.0,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r11",
+      "group": "same_amount",
+      "expected": "T11A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "NORTHBOOKS",
+        "date": "2026-03-31",
+        "cents": 2095
+      },
+      "raw": "NORTHBOOKS\nDATE 2026-03-31\nITEMS EUR\nPurchase 20.95\nTOTALEUR20.95\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T11A",
+        "candidates": [
+          {
+            "id": "T11A",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T11B",
+            "merchant_similarity": 0.182
+          }
+        ]
+      },
+      "error": null,
+      "ms": 601.8,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r12",
+      "group": "same_amount",
+      "expected": "T12A",
+      "expected_status": "matched",
+      "parsed": {
+        "merchant": "TEJOBAKERY",
+        "date": "2026-04-03",
+        "cents": 2232
+      },
+      "raw": "TEJOBAKERY\nDATE 2026-04-03\nITEMS EUR\nPurchase 22.32\nTOTALEUR22.32\nTHANKYOU",
+      "result": {
+        "status": "matched",
+        "transaction": "T12A",
+        "candidates": [
+          {
+            "id": "T12A",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T12B",
+            "merchant_similarity": 0.19
+          }
+        ]
+      },
+      "error": null,
+      "ms": 558.3,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r13",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": "MISTAGROCERY",
+        "date": "2026-04-06",
+        "cents": 2369
+      },
+      "raw": "MISTAGROCERY\nDATE 2026-04-06\nITEMS EUR\nPurchase 23.69\nTOTALEUR23.69\nTHANKYOU",
+      "result": {
+        "status": "ambiguous",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T13B",
+            "merchant_similarity": 0.917
+          },
+          {
+            "id": "T13A",
+            "merchant_similarity": 0.917
+          }
+        ]
+      },
+      "error": null,
+      "ms": 936.2,
+      "fields_correct": {
+        "merchant": false,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r14",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": "PORTOSTUDIO",
+        "date": "2026-04-09",
+        "cents": 2506
+      },
+      "raw": "PORTOSTUDIO\nDATE 2026-04-09\nITEMS EUR\nPurchase 25.06\nTOTALEUR25.06\nTHANKYOU",
+      "result": {
+        "status": "ambiguous",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T14B",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T14A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 879.0,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r15",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": "OLIVECORNER",
+        "date": "2026-04-12",
+        "cents": 2643
+      },
+      "raw": "OLIVECORNER\nDATE 2026-04-12\nITEMS EUR\nPurchase 26.43\nTOTALEUR26.43\nTHANKYOU",
+      "result": {
+        "status": "ambiguous",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T15B",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T15A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 615.2,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r16",
+      "group": "indistinguishable",
+      "expected": null,
+      "expected_status": "ambiguous",
+      "parsed": {
+        "merchant": "RIVERCAFE",
+        "date": "2026-04-15",
+        "cents": 2780
+      },
+      "raw": "RIVERCAFE\nDATE 2026-04-15\nITEMS EUR\nPurchase 27.80\nTOTALEUR27.80\nTHANKYOU",
+      "result": {
+        "status": "ambiguous",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T16B",
+            "merchant_similarity": 1.0
+          },
+          {
+            "id": "T16A",
+            "merchant_similarity": 1.0
+          }
+        ]
+      },
+      "error": null,
+      "ms": 701.6,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r17",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "LUMENMARKET",
+        "date": "2026-04-18",
+        "cents": 2917
+      },
+      "raw": "LUMENMARKET\nDATE2026-04-18\nITEMS EUR\nPurchase 29.17\nTOTALEUR29.17\nTHANKYOU",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T17B",
+            "merchant_similarity": 0.286
+          }
+        ]
+      },
+      "error": null,
+      "ms": 465.2,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r18",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "ATLASCOFFEE",
+        "date": "2026-04-21",
+        "cents": 3054
+      },
+      "raw": "ATLASCOFFEE\nDATE2026-04-21\nITEMS EUR\nPurchase 30.54\nTOTALEUR30.54\nTHANKYOU",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T18B",
+            "merchant_similarity": 0.19
+          }
+        ]
+      },
+      "error": null,
+      "ms": 633.5,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r19",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "NORTHBOOKS",
+        "date": "2026-04-24",
+        "cents": 3191
+      },
+      "raw": "NORTHBOOKS\nDATE2026-04-24\nITEMS EUR\nPurchase 31.91\nTOTALEUR31.91\nTHANKYOU",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T19B",
+            "merchant_similarity": 0.182
+          }
+        ]
+      },
+      "error": null,
+      "ms": 667.9,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    },
+    {
+      "id": "r20",
+      "group": "no_match",
+      "expected": null,
+      "expected_status": "no_match",
+      "parsed": {
+        "merchant": "TEJOBAKERY",
+        "date": "2026-04-27",
+        "cents": 3328
+      },
+      "raw": "TEJOBAKERY\nDATE2026-04-27\nITEMS EUR\nPurchase 33.28\nTOTALEUR33.28\nTHANKYOU",
+      "result": {
+        "status": "no_match",
+        "transaction": null,
+        "candidates": [
+          {
+            "id": "T20B",
+            "merchant_similarity": 0.19
+          }
+        ]
+      },
+      "error": null,
+      "ms": 638.3,
+      "fields_correct": {
+        "merchant": true,
+        "date": true,
+        "cents": true
+      }
+    }
+  ]
+}
